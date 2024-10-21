@@ -1,0 +1,26 @@
+﻿/* ChL@2015   YD@2016
+   pour l'impression 
+*/   
+#com, table,#tot,td:last-child {
+	background-color:initial;
+	color : initial;
+}
+#frm {
+	display: none;
+}
+#com {
+	float:left;
+    width:7cm;
+    font-family: arial;
+    font-size:11pt;
+}
+#com, table {
+	border:1px solid black;
+}  
+#bar, #dte {
+	display:block;
+    padding: 1em 0;
+}
+#dte { 
+	text-align : center;
+} 

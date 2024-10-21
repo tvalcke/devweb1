@@ -1,0 +1,23 @@
+body {
+    width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    background-color: navy;
+    position: fixed;
+    width: 800px;
+    top: 0; /* Collez-le en haut de la fenêtre */
+}
+
+img {
+    float: right; /* Pour positionner l'image à droite du header */
+
+}
+
+section {
+    margin-top: 150px; /* La hauteur de l'en-tête + une marge pour dégager l'espace */
+    height: 400px;
+    overflow: auto;
+}

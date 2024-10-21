@@ -1,0 +1,22 @@
+/* CSS demandé */
+form {
+    margin-top: 20px;
+    width: 50%;
+}
+
+table {
+    margin: 2%;
+    width: 46%;
+    border-collapse: collapse; /* Pas d'espace entre les cellules */
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+  
+
+/* Extras */
+html {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aliceblue;
+}

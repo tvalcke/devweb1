@@ -1,0 +1,137 @@
+﻿/* ChL@2015  YD@2016 */
+body {
+	width: 650px;
+    font-family: verdana, sans-serif;
+    font-size: 1em;
+}
+form p {
+	margin: 0;
+}  
+#commande p {
+	margin: 1.5em 0;
+} 
+#frm, #com { 
+    width: 310px;
+	border:double black;
+	background: lightgray;
+} 
+#frm {
+	float:left;
+}      
+#chx { 
+    display: block;
+    margin: 0.3em 0.3em 0.3em 0.1em;
+    width:auto;
+    border: 1px dotted black;
+	background-color: #FAFAFA;
+}
+#chx label:last-child {
+	padding-right: .5em;
+}
+#com { 
+    padding:0.3em;
+    float:right;
+}  
+select { 
+    padding: 0 0.5em;
+    overflow: hidden;
+    font-size: 1em;
+}
+option { 
+    padding: 0.1em 0.5em;
+}
+option:checked, 
+option:active, 
+option:focus {
+	background:red;
+}
+fieldset {
+	margin: 0.8em;
+    padding:0.8em;
+    background: whitesmoke;
+    border: 1px dotted black;
+	border-radius: 0.1em .5em ;
+	box-shadow: .15em .15em .15em gray;
+}
+legend {
+	background: whitesmoke;
+    padding: 0.2em 0.5em;
+    border: 1px dotted black;
+	border-radius: .5em 0.1em;
+	box-shadow: .1em .1em .1em lightgray;
+}  
+input {
+	width:80px;
+    font-size:1em;
+}
+input[type=number] {
+	width:150px;
+    font-weight: bold;
+    font-size:1em;
+    color:blue;
+    padding:0.2em;
+}
+input[type=radio] {
+	width:20px;
+}  
+#commande input{
+	border-radius: .25em;
+	box-shadow: .1em .1em .1em lightgray;
+}
+#articles {
+	float: left;
+}
+#commande {
+	float:right;
+    text-align: center;
+}
+#com {
+	float:right;
+} 
+#listeGauche {
+	margin-left:8px;
+    margin-right:-4px;
+}    
+#listeDroite {
+	text-align:right;
+    margin-left:-4px;
+}
+table {
+	border: double black;
+    padding: 0.3em;
+    background: beige;
+}
+caption {
+	margin: 0.3em 0;
+}  
+tbody td {
+	border: 1px dashed black;
+	border-top: none;
+    border-left: none;
+    padding:0.2em;
+	padding-left:0;
+}
+th {
+	font-style: italic;
+    font-weight:normal;
+    width:70px;
+    text-align:left;
+    padding: 0.1em 0.25em 0.5em 0;
+    border-bottom: 1px solid black;
+}
+th, td {
+	text-align:right;
+}
+th:first-child, td:first-child {
+	text-align:left;
+}
+td:last-child {
+	font-weight: bold;
+    color:blue;
+}
+#tot {
+	border: double black;
+    text-align: right;
+    font-weight:bold;
+    color:red;
+}    

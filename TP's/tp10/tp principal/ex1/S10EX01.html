@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>TP10</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="S10.js"></script>
+    </head>
+    
+    <body onload="init()">
+        <div class="container">
+            <div class="bloc1">
+              <form id="form" onsubmit="ajouterFruit(this); return false;">
+                <fieldset>
+                    <legend>pesez votre article</legend>
+                    <label for="poids">poids : </label>
+                    <input type="number" name="poids" id="poids" placeholder="entre 50g et 10kg" min="0" max="1000" step="10" required>  <!-- problème d'affichage si je met min="0" -->
+                </fieldset>
+
+                <fieldset>
+                    <legend>séléctionnez l'article</legend>
+                    <div class="sousBloc1">
+                        <select id="list1" name="list1" size="2"></select>
+                        <select id="list2" name="list2" size="2"></select>
+                    </div>
+
+                    <div class="sousBloc2">
+                        <p><button type="submit">Ajouter</button></p>
+                        <p><button type="button" onclick="enleverFruit(this)">Enlever</button></p>
+                        <p><button type="button">Imprimer</button></p>
+                        <p><button type="button" onclick="viderCommande()">Effacer</button></p>
+                    </div>
+                </fieldset>
+              </form>
+            </div>
+            
+            <div class="bloc2">
+                <table>
+                    <caption>synthèse de votre achat</caption>
+                    <thead>
+                      <tr>
+                        <th id="souligné">article</th>
+                        <th id="aDroiteSouligné">prix</th>
+                        <th id="aDroiteSouligné">qté(kg)</th>
+                        <th id="aDroiteSouligné">total</th>
+                      </tr>
+                    </thead>
+                    <tbody id="donnees">
+                      <!-- Les données de la balance vont ici -->
+                    </tbody>
+                    <tfoot id="total">
+                      <tr>
+                        <td colspan="3">Total à Payer :</td>
+                        <td id="prix"></td>
+                      </tr>
+                    </tfoot>
+                  </table>
+            </div>
+          </div>
+    </body>
+</html>

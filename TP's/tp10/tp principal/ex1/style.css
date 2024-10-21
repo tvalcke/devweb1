@@ -1,0 +1,143 @@
+html{
+    background-color: aliceblue;
+}
+
+body{
+    width: 650px;
+    font-family: Verdana, sans-serif;
+    font-size: 1em;
+}
+
+.bloc1, .bloc2 {
+    border-width: 3px;
+    border-style: double;
+    border-color: rgb(0, 0, 0);
+
+    width: 310px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.bloc1{
+    margin-right:10px;
+    background-color:lightgrey;
+}
+
+.bloc2{
+    background-color: lightgrey;
+}
+
+.sousBloc1{
+    display: flex;
+    float: left;
+}
+
+.sousBloc2{
+    float: left;
+    margin-left: 8px;
+}
+
+fieldset {
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+    border: 1px dashed black;
+}
+
+legend{
+    border: 1px dashed black;
+    background-color: whitesmoke;
+}
+
+
+.container {
+    width: 650px;
+    display: flex;
+}
+
+table{
+    background-color: beige;
+    border-width: 3px;
+    border-style: double;
+    border-color: rgb(0, 0, 0);
+    width: 310px;
+}
+
+thead th{
+    font-style: italic;
+    font-weight: lighter;
+}
+
+#aDroite{
+    text-align: right;
+    border-right: 1px dashed black;
+    border-bottom: 1px dashed black;
+}
+
+#aDroiteSouligné{
+    text-align: right;
+    border-bottom: 1px solid black;
+}
+
+#aDroiteTotal{
+    text-align: right;
+    border-right: 1px dashed black;
+    border-bottom: 1px dashed black;
+    color: blue;
+    font-weight: bold;
+}
+
+#souligné{
+    border-bottom: 1px solid black;
+}
+
+#prix {
+    color: red;
+    font-weight: bold;
+    text-align: right;
+    border-width: 3px;
+    border-style: double;
+    border-color: rgb(0, 0, 0);
+}
+
+#fruit{
+    border-right: 1px dashed black;
+    border-bottom: 1px dashed black;
+}
+
+#list1{
+    width: 70px;
+    overflow: hidden;
+    height: 190px;
+}
+
+#list2{
+    width: 60px;
+    overflow: hidden;
+}
+
+#list1 :checked, #list2 :checked{
+    background-color: rgb(0, 153, 255);
+    color: aliceblue;
+    border-radius: 5%;
+}
+
+#list1, #list2{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+button{
+    width: 65px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+select{
+    border: 1px solid black;
+    overflow: none;
+    text-align: center;
+}
+
+#poids{
+    width: 150px;
+}

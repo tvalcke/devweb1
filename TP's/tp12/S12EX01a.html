@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercice 1</title>
+        <link rel="stylesheet" href="S12EX01.css">
+        <script src="utils.js" ></script>
+    </head>
+
+    <body onload="init()">
+        <form id="formPrincipal">
+
+            <section id="catalogue">
+                <h3>Catalogue de la bibliothèque</h3>
+                <fieldset id="btnsRadio">
+                    <input type="radio" name="rdbtn" id="rdbtn0" value="1" checked onclick="">ref
+                    <input type="radio" name="rdbtn" id="rdbtn1" value="2" onclick="">auteur
+                    <input type="radio" name="rdbtn" id="rdbtn2" value="3" onclick="">titre
+                </fieldset>
+
+                <table id="tableCatalogue">
+                    <thead>
+                        <tr>
+                            <th class="ref">Ref</th>
+                            <th class="auteur">Auteur</th>
+                            <th class="titre">Titre</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bodyCatalogue">
+                    </tbody>
+                </table>
+                <input type="text" id="txtEmprunt" placeholder="testtest">
+                <button type="button" id="btnEmprunt" onclick="emprunter()">Emprunter</button>
+
+            </section>
+
+            <section id="prets">
+                <h3 id="ouvragesTitre">Ouvrages actuellement en prêt</h3>
+                <table id="tablePrets">
+                    <thead>
+                        <tr>
+                            <th class="ref">Ref</th>
+                            <th class="auteur">Auteur</th>
+                            <th class="titre">Titre</th>
+                            <th class="depuis">Depuis</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bodyPrets">
+
+                    </tbody>
+                </table>
+                <input type="text" id="txtRendre" placeholder="">
+                <button type="button" id="btnrendre" onclick="rendre()">rendre</button>
+            </section>
+        </form>
+    </body>
+</html>

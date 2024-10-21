@@ -1,0 +1,20 @@
+html{
+    background-color:azure;
+}
+* { 
+    font-family: verdana, sans-serif;
+    font-size: 1em; 
+}
+
+table { 
+    border: double black solid;
+    border-collapse: collapse; 
+}
+
+td { 
+    border: 1px black solid; 
+}
+
+table, td { 
+    padding: 5px; 
+}

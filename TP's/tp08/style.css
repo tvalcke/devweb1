@@ -1,0 +1,77 @@
+/* Reset some default styles */
+html, body, h1, p, button {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #00ff2a;
+    padding: 20px;
+  }
+  
+  /* Style the container divs for each functionality section */
+  #affichage,
+  #annulation,
+  #tacheUrgente,
+  #tachesImportance,
+  #tacheResolue,
+  #tachesOuvertesImportance,
+  #dureeTachesOuvertes {
+    background-color: #d4ff00;
+    border: 10px solid #7d0299;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style the buttons */
+  button {
+    background-color: #ff00d4;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: burlywood;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style the horizontal rules */
+  hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  /* Style the header section */
+  head {
+    text-align: center;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    
+  }
+  
+  /* Style the header title */
+  head title {
+    font-size: 24px;
+  }
+  
+  /* Style the header description */
+  head description {
+    font-size: 14px;
+  }
+  
+  /* Style the button container */
+  button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Add additional CSS styles as needed for your specific design. */
+  

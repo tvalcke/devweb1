@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8>
+    <title>TP08 - Entrainement : Liste de tâches</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- Script à créer ! -->
+    <script src="liste-taches.js"></script>
+  </head>
+
+  <form id="formulaire" onsubmit="ajouterTache(event);">
+    <fieldset>
+      <legend>Création de Tâches</legend>
+      <!-- nom -->
+      <label for="nom">Nom : </label>
+      <input id="nom" name="nom" type="text" value="Nom de la tâche" required=""> <br>
+      <!-- date -->
+      <label for="creation">Date limite : </label>
+      <input id="creation" name="creation" type="date" required=""> <br>
+  
+      <!-- importance -->
+      <label for="importance">Importance : </label>
+      <select id="importance" name="importance">
+        <option value="top" selected="">Top</option>
+        <option value="cool">Cool</option>
+        <option value="bof">Bof</option>
+      </select><br>
+  
+      <!-- Durée -->
+      <label for="duree">Durée en heures : </label>
+      <input id="duree" name="duree" type="number" min="0" max="1000" step="1" required=""><br>              
+      <!-- bouton -->
+      <input type="submit">
+    </fieldset>
+  </form>
+  
+  <!-- zone d'affichage -->
+  <div id="affichage">
+    <p>Message : <span id="message"></span></p>
+  </div>
+  
+    <!-- ***** FONCTIONNALITES ***** -->
+
+    <!-- Afficher le tableau de tâches -->
+    <div id="affichage">
+      <p>Afficher en console le tableau des tâches
+      <button type="button" onclick="afficherTaches();">Afficher les tâches</button></p>
+    </div>
+    <hr>
+
+    <!-- Annuler le dernier Ajout de tâche -->
+    <div id="annulation">
+      <p>Annuler la dernière tâche ajoutée
+      <button type="button" onclick="annulerDerniereTache();">Annuler</button></p>
+    </div>
+    <hr>
+
+    <!-- Indiquer quelle est la tâche la plus urgente -->
+    <div id="tacheUrgente">
+      <p>Afficher la tâche la plus urgente
+      <button type="button" onclick="afficherTacheUrgente();">Tâche urgente</button></p>
+    </div>
+    <hr>
+
+    <!-- Lister les tâches sur un critère : l'importance  -->
+    <div id="tachesImportance">
+      <p>Afficher les tâches filtrées sur l'importance
+        <button type="button" onclick="afficherTachesImportance('top');">Filtrer Tâches Top</button>
+        <button type="button" onclick="afficherTachesImportance('cool');">Filtrer Tâches Cool</button>
+        <button type="button" onclick="afficherTachesImportance('bof');">Filtrer Tâches Bof</button>
+      </p>
+
+      <label for="importance">Importance : </label>
+      <select id="importance" name="importance">
+        <option value="top" selected="">Top</option>
+        <option value="cool">Cool</option>
+        <option value="bof">Bof</option>
+      </select><br>
+    </div>
+    <hr>
+
+    <!-- Indiquer qu'une tâche est résolue -->
+    <div id="tacheResolue">
+        <form id="résolu" onsubmit="marquerTacheResolue(event);">
+          <fieldset>
+            <legend>Marquer une tâche comme résolue</legend>
+            <!-- code -->
+            <label for="code">Code : </label>
+            <input id="code" name="code" type="text" value="Code de la tâche (ex T01)" required=""> <br>              
+            <!-- bouton -->
+            <input type="submit">
+          </fieldset>
+        </form>
+    </div>
+
+    <hr>
+
+    <!-- Lister les tâches sur deux critère : l'importance et le fait qu'elle ne soit pas encore résolue  -->
+    <div id="tachesOuvertesImportance">
+      <p>Afficher les tâches ouvertes filtrées sur l'importance
+        <button type="button" onclick="afficherTachesOuvertesImportance('top');">Filtrer Tâches ouvertes Top</button>
+        <button type="button" onclick="afficherTachesOuvertesImportance('cool');">Filtrer Tâches ouvertes Cool</button>
+        <button type="button" onclick="afficherTachesOuvertesImportance('bof');">Filtrer Tâches ouvertes Bof</button>
+      </p>
+    </div>
+    <hr>
+
+    <!-- Calculer la durée totale des tâches non résolues -->
+    <div id="dureeTachesOuvertes">
+      <p>Calculer et afficher la durée totale des tâches ouvertes.
+      <button type="button" onclick="afficherDureeTachesOuvertes();">Calculer durée restante</button></p>
+    </div>
+    <hr>
+
+    <!-- fonction d'affichage -->
+
+    </div>
+  </body>
+</html>

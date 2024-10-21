@@ -1,0 +1,41 @@
+#j01 ,#j07
+{
+    color:red;
+}
+
+tr.Windows, tr.OSX
+{
+background-color: pink;
+}
+  
+.Wii td, .OSX td
+{
+    font-style: italic;
+}
+
+table.meilleurs th, table.suivants th
+{
+    font-style:bold;
+    color: rgb(0, 255, 0);
+    text-align:center;
+}
+
+#jeux11a20 .PlayStation3 td 
+{
+    font-weight: bold;
+}
+  
+#jeux11a20 #j06 td, #jeux11a20 .Wii td
+{
+    border: 1px solid black;
+}
+
+[coucou]
+{
+    color: blue;
+}
+
+.Xbox360, .XboxeOne 
+{
+    display: none;
+}

@@ -1,0 +1,28 @@
+﻿/* identifiez-vous */
+html { ...; }
+body  { background: ...;
+  font-family: verdana, tahoma, sans-serif;
+  font-size: 1em; 
+  box-sizing: ...;
+  min-width: ...; } 
+header, footer { font-family: ...;
+  font-size: ...;
+  font-style: ...;
+  text-align: ...;
+  background-color: ...;
+  padding: 0.5%; }
+footer { font-size: 0.9em;
+  text-align: ...;
+  margin-top: 0.5%;
+  ... } 
+section { box-sizing: ...;
+  width: ...;
+  margin: ...;
+  padding: ...;
+  border: 1px solid black;
+  text-align: ...;
+  height: ...; 
+  overflow: ...;
+  background-color: ...;
+  ... }  
+h1 { ... }   

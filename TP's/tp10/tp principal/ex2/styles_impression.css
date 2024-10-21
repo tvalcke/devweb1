@@ -1,0 +1,87 @@
+/* styles_impression.css */
+body {
+    width: 8cm;
+    font-family: Arial, sans-serif;
+    font-size: 11pt;
+}
+
+.container {
+    width: 650px;
+    display: flex;
+}
+
+table{
+    border: 1px solid black;
+    width: 310px;
+}
+
+thead th{
+    font-style: italic;
+    font-weight: lighter;
+}
+
+#aDroite{
+    text-align: right;
+    border-right: 1px dashed black;
+    border-bottom: 1px dashed black;
+}
+
+#aDroiteSouligné{
+    text-align: right;
+    border-bottom: 1px solid black;
+}
+
+#aDroiteTotal{
+    text-align: right;
+    border-right: 1px dashed black;
+    border-bottom: 1px dashed black;
+    font-weight: bold;
+}
+
+#souligné{
+    border-bottom: 1px solid black;
+}
+
+#prix {
+    font-weight: bold;
+    text-align: right;
+    border-width: 3px;
+    border-style: double;
+    border-color: rgb(0, 0, 0);
+}
+
+#fruit{
+    border-right: 1px dashed black;
+    border-bottom: 1px dashed black;
+}
+
+#list1, #list2{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#poids{
+    width: 150px;
+}
+
+#codeBarre {
+    display: block;
+    max-height: 100px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.bloc1{
+    display: none;
+}
+
+.bloc2{
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}

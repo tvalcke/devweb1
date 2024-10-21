@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- saved from url=(0149)https://devweb.ephec.be/tp/1t/S1_progra/Progra-TP08_dom-getElementById-formulaire-todolist/ressources/formulairePersonnage/formulaire-personnage.html -->
+<html class=" FB_FW_ext eidReader"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+      <title>TP08 - Logique et Programmation</title>
+      <script src="formulaire-personnage.js"></script>
+  </head>
+  <body>
+           
+	  <form id="formulairePersonnage" action="https://devweb.ephec.be/tp/1t/S1_progra/Progra-TP08_dom-getElementById-formulaire-todolist/ressources/formulairePersonnage/formulaire-personnage.html#" onsubmit="return ajouterPersonnage(this);">
+		<fieldset>
+		  <legend>Création de personnages</legend>
+		  <!-- nom -->
+		  <label for="nom">Nom : </label>
+		  <input id="nom" name="nom" type="text" value="Toto" required=""> <br>
+		  <!-- date -->
+		  <label for="creation">Date de création : </label>
+		  <input id="creation" name="creation" type="date" required=""> <br>
+		  <!-- sexe -->
+		  <input id="femme" type="radio" name="genre" value="femme" required="">
+		  <label for="femme">Madame</label><br>
+		  <input id="homme" type="radio" name="genre" value="homme" required=""> 
+		  <label for="homme">Monsieur</label><br>
+		  <!-- espece -->
+		  <label for="espece">Espèce : </label>
+		  <select id="espece" name="espece">
+			<option value="E">Elf</option>
+			<option value="H" selected="">Humain</option>
+			<option value="N">Nain</option>
+			<option value="W">Wookiee</option>
+		  </select><br>
+		  <!-- age -->
+		  <label for="age">Age  : </label>
+		  <input id="age" name="age" type="number" min="20" max="115" step="1" required=""><br>              
+		  <!-- bouton -->
+		  <input type="submit">
+		</fieldset>
+	  </form>
+	  
+	  <!-- zone d'affichage -->
+	  <div id="affichagePersonnages">
+		<p>Message : <span id="message"></span></p>
+	  </div>
+	  <!-- boutons -->          
+	  <div id="boutonsPersonnages">
+		<button type="button" onclick="afficherPersonnages();">Afficher</button>
+		<button type="button" onclick="supprimerPersonnages();">Supprimer</button> <br>
+	  </div>
+	
+</body></html>

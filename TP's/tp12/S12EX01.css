@@ -1,0 +1,116 @@
+body{
+    width: 900px;
+    font-style: verdana;
+    font-size: 1em;
+}
+
+#catalogue {
+    width: 53%;
+    float: left;
+    margin-left: 0.3em;
+}
+
+#prets {
+    width: 44%;
+    float: left;
+    margin-right: 0.3em;
+}
+
+fieldset{
+    background-color: rgb(245, 245, 220);
+    width: 75%;
+    height: 22px;
+}
+
+th{
+    font-style: italic;
+}
+
+.ref{
+    width: 15%;
+    border-bottom:1px solid black;
+    text-align: left;
+    font-size: 0.75em;
+}
+
+.auteur{
+    width:20%;
+    border-bottom:1px solid black;
+    text-align: left;
+    
+}
+
+.titre{
+    width: 65%;
+    border-bottom:1px solid black;
+    text-align: left;
+}
+
+.depuis{
+    border-bottom:1px solid black;
+    font-size:0.7em;
+    text-align: left;
+}
+
+table{
+    border: 3px double black;
+    background-color: rgb(245, 245, 245);
+}
+
+#tableCatalogue{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 98%;
+    min-height: 35px;
+}
+
+#tablePrets{
+    margin-bottom: 15px;
+    width: 100%;
+    min-height: 35px;
+}
+
+h3{
+    margin-bottom: 0;
+}
+
+#ouvragesTitre{
+    margin-top: 65px;
+}
+
+input{
+    width: 50px;
+}
+
+.ref2{
+    width: 15%;
+    border-right:1px dashed black;
+    border-bottom: 1px dashed black;
+    text-align: left;
+    font-size: 0.75em;
+}
+
+.ref2:hover{
+    background-color: rgb(173, 216, 230);
+}
+
+.auteur2{
+    width:20%;
+    border-right:1px dashed black;
+    border-bottom: 1px dashed black;
+    text-align: left;
+}
+
+.titre2{
+    width: 65%;
+    border-right:1px dashed black;
+    border-bottom: 1px dashed black;
+    text-align: left;
+}
+
+.depuis2{
+    border-right:1px dashed black;
+    border-bottom: 1px dashed black;
+    font-size:0.7em;
+    text-align: left;
+}
